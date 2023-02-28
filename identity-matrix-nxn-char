@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+
+int main () {
+    std::cout << setw(33) << std::left << std::setfill('-') << "\n" << std::endl;
+    std::cout << setw(33) << std::left << std::setfill('-') << "-Identity Matrix (char)" << std::endl;
+    int size {0};
+    char c {};
+    std::cout << "Please enter an integer: ";
+    cin >> size;
+    std::cout << "Please enter a char: ";
+    cin >> c;
+    for (int i{0}; i < size; ++i) {
+        for (int j{0}; j < size; ++j) { 
+          if( i == j) {
+          std::cout << n << " ";
+          } else {
+          std::cout << "-";
+          }
+          std::cout << std::endl;
+        }
+    }
+    
+    
+return 0;
+}
